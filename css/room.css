@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* ?Banner bg */
+.background{
+    width: 100%;
+    height: 60vh;
+    
+    background-image: url(../images/Rooms/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.background h1{
+    margin-bottom: 50px;
+}
+/* ?Overview section */
+.overview{
+    width: 100%;
+    height: 100%;
+}
+.owl-carousel{
+    height: 500px;
+    overflow: hidden;
+}
+.item{
+  
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.owl-prev{
+    background-color: rgba(0, 0, 0, 0.616) !important;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #fff !important;
+    font-size: 45px !important;
+}
+.owl-next{
+    background-color: rgba(0, 0, 0, 0.616) !important;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #fff !important;
+    font-size: 45px !important;
+}
+/* ?card */
+.card .btn,.btn-primary{
+    background-color: #d5a419;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+}
+.card{
+    border-radius: 0px;
+    /* padding: 40px; */
+    height: 400px;
+}
+.card-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid #d5a419;
+    width: 100%;
+    height: 80px;
+}
+.card-body{
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+.sup{
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 100% !important;
+}
+.sup .col-lg-2{
+    display: block;
+    text-align: center;
+    width: calc(16.666% - 10px);
+    flex-grow: 0;
+    background-color: #fff;
+    margin: 5px;
+    padding: 15px 0 5px ;
+    background-color: #fff;
+}
+.sup .col-lg-2 img{
+    width: 60px !important;
+}
+.sup .col-lg-2 h4{
+    font-size: 12px;
+}

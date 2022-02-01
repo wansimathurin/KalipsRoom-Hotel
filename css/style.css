@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+.btn-color{
+    background-color: #d5a419;
+    color: #fff;
+    border-radius: 0px;
+}
+/* *nav bar area */
+.navbar{
+    background-color: #222f4c;
+    color: #fff !important;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+.nav-container{
+    /* display: flex !important;
+    justify-content: space-between !important; */
+}
+.nav-container a{
+    color: #fff !important;
+}
+.navbar-collapse{
+    margin-left: 150px;
+}
+.navbar-nav{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 850px;
+}
+.nav-container .btn{
+    color: #fff;
+}
+.navbar-brand{
+    font-family:  cursive;
+    font-size: 20px;
+}
+/*  Banner area*/
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-color: #222f4c;
+    position: relative;
+    overflow: hidden;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;  
+}
+.banner h2:nth-child(1){
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 150px !important;
+    word-spacing: 10px !important;
+   
+}
+.banner .next{
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100% !important;
+     background-color: #222f4cab ;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.banner .next h2{
+    font-size: 50px;
+    word-spacing: 5px;
+    font-weight: 400;
+}
+/* banner end */
+
+/* welcome start */
+.welcome{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.welcome .col-lg-4{
+    height: 300px;
+    position: relative;
+}
+.title h3{
+    font-size: 38px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    /* z-index: 99; */
+     position: relative;
+    font-style: normal;
+}
+.title h1{
+    position: absolute;
+    top: 15%;
+    color: #e8d0b8;
+    text-transform: capitalize;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 150px;  
+}
+
+/* *service area */
+.services{
+    height: 70vh;
+    width: 100%;
+    overflow-x: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.services .col-lg-3{
+    height:400px;
+     width: 340px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+.services .col-lg-3:nth-child(1){
+    background: url(../images/services/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.services .col-lg-3:nth-child(2){
+    background: url(../images/services/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.services .col-lg-3:nth-child(3){
+    background: url(../images/services/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.services .col-lg-3:nth-child(4){
+    background: url(../images/services/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services .col-lg-3:hover{
+    transform: scale(1.02);  
+}
+.services .col-lg-3 h1,.services .col-lg-3 p,.services .col-lg-3 i,.services .col-lg-3 .btn{
+    z-index: 1;
+}
+.bg-overlay{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+/* bestRooms area */
+.bestRoomArea{
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+
+#bestRooms{
+    height: 600px;
+    /* background-color: #222f4c; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bestRooms .item{
+    font-family: sans-serif;
+    margin: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 25px #222f4c ;
+    border-radius: 0px;
+}
+#bestRooms .btn{
+  /* height: 100px; */
+  width: 80%;
+  background-color: #d5a419;
+  color: #fff;
+  border-radius: 0px;
+  border: none;
+  margin-bottom: 30px;
+  
+}
+#bestRooms .item .item-img{
+    height: 200px;
+    overflow: hidden;
+}
+
+#bestRooms .owl-prev{
+    background-color: #d5a419;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 45%;
+    left: -1%;
+}
+#bestRooms .owl-next{
+    background-color: #d5a419;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 45%;
+    right:1%;
+}
+#bestRooms .card-title{
+    font-family: 'Raleway';
+    color: #222f4c;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+/* Delicious area */
+.Delicious{
+    height: 60vh;
+    background-color: #222f4c;
+    background-image: url(../images/bg.jpg);
+     overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.deli-content{
+    position: relative;
+    display: flex !important;
+    /* align-items: center !important; */
+    justify-content: center !important;
+    flex-direction: column;
+    height: 500px;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.deli-content .title h3,.deli-content p{
+    color: #fff;
+    width: 400px;
+}
+.deli-content .btn{
+    width: 50%;
+    background-color: #d5a419 !important;
+}
+.deli-content .title h1{
+    position: absolute;
+    top: 5%;
+    color: rgba(193, 155, 118, 0.75);
+    text-transform: capitalize;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 150px;  
+}
+
+/* testimonials */
+
+.testimonials{
+    width: 100%;
+    height: 80vh;
+    /* background-color: #222f4c; */
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+#testi-content{
+    width: 80%;
+    height: 10vh;
+    /* background-color: #d5a419; */
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#slider{
+    height: 350px !important;
+    /* background-color: #333; */
+    width: 80%;
+    overflow: hidden;
+}
+#testi-content .title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testi-content .title h1{
+    position: absolute;
+    top: -80px;
+    color: rgba(193, 155, 118, 0.75);
+    text-transform: capitalize;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 150px;  
+}
+#testimonial .item{
+    height: 300px;
+    width: 500px;
+    /* background-color: #d5a419; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 250px; */
+    text-align: center;
+    flex-direction: column;
+}
+#testimonial .item .img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#testimonial  .owl-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #222f4c; */
+    width: 500px;
+}
+#testimonial .owl-prev{
+    background-color: #d5a419;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    border: 1px solid #222f4c;
+}
+#testimonial .owl-next{
+    background-color: #d5a419;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 2%;
+    right:35%;
+    border: 1px solid #222f4c;
+}
+
+/* Footer */
+.Footer{
+    height: 60vh;
+    background-color: #222f4c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-top {
+   margin-top:20px;
+}
+.footer-top .navbar-brand {
+    color: #d5a419 ;
+   /* background-color: #333; */
+   display: flex;
+   align-items: center;
+   /* justify-content: center;  */
+   margin-bottom: 12px;
+}
+.footer-top h3{
+    font-family: 'Raleway';
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.footer-top .form-control{
+    display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   border-radius: 0px;
+}
+.footer-top .form-control input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.footer-top .form-control button{
+    background-color: #fff;
+    border: none;
+}
+.fa-paper-plane:hover{
+    color: #d5a419;
+}

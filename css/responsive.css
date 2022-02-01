@@ -1,0 +1,119 @@
+@media(max-width:500px){
+     .navbar .btn {
+         display: none;
+     }
+     .navbar-toggler{
+         border: none;
+         outline: none;
+     }
+     .fa-bars{
+        color: #d5a419;
+        font-size: 38px;
+     }
+     .navbar-toggler:focus {
+        text-decoration: none;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+
+    .banner{
+        height: 50vh;
+    }
+    .banner h2:nth-child(1){
+        font-size: 70px !important;
+    }
+    .banner .next{
+        height: 50vh;
+        text-align: center;
+    }
+    .banner .next h2{
+        font-size: 30px;
+        word-spacing: 5px;
+        font-weight: 400;
+    }
+    .welcome .col-lg-4{
+        height: 200px;
+        position: relative;
+    }
+    /* Services */
+    .services{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;   
+    }
+    .services .col-lg-3{
+        width: 88%;
+        margin: 20px;
+    }
+    /* extra  */
+    .extra-services .row .col-lg-4 .row{
+        
+    text-align: center;
+    }
+    /* Delicious */
+    .Delicious {
+        overflow: hidden;
+    }
+    .Delicious .disapear{
+        display: none;
+        background-color: brown !important;
+
+    }
+    .deli-content{
+         overflow: hidden;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.432);
+    }
+    #testi-content .title h1{
+        position: absolute;
+        top: -80px;
+        color: rgba(193, 155, 118, 0.75);
+        text-transform: capitalize;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;  
+    }
+    
+    #testimonial .item{
+        height: 300px;
+        width: 400px;
+        /* background-color: #d5a419; */
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    #bestRooms .item{
+        
+        margin: 55px;
+   
+    }
+    /** footer */
+    .Footer{
+        height: 90vh;
+        background-color: #222f4c;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  /* Supplus  services  */
+  .sup{
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-left: 1px;
+    margin-bottom: 50px;
+    width: 100% !important;
+}
+.sup .col-lg-2{
+    display: block;
+    text-align: center;
+    width: calc(50% - 10px) !important;
+    background-color: #fff;
+    margin: 5px;
+    padding: 15px 0 5px ;
+    background-color: #fff;
+}
+}
