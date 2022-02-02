@@ -61,7 +61,7 @@ $( function(){
   ${relatedRooms.map(function related(relRoom){
       return `
         <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 400px;">
          <div class="cardImg">
            <img src="${relRoom.image}" class="card-img-top" alt="...">
             <div class="check">
