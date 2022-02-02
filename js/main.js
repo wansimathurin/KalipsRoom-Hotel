@@ -1,3 +1,4 @@
+
 // carousel initialisation
 $( function(){
     $('#overview .owl-carousel').owlCarousel({
@@ -16,31 +17,8 @@ $( function(){
             }
         }
     });
-    // Related Rooms
-    document.getElementById('related-area').innerHTML = `
-     ${relatedRooms.map(function related(relRoom){
-         return `
-           <div class="col-lg-4">
-           <div class="card" style="width: 18rem;">
-            <div class="cardImg">
-              <img src="${relRoom.image}" class="card-img-top" alt="...">
-               <div class="check">
-                 <a href="${relRoom.link}"><button>Check Details   <i class="fa fa-chevron-right" aria-hidden="true"></i></button></a>
-               </div>
-            </div>
-            <span>${relRoom.price}/Night</span>
-           <div class="m-4 text-justify">
-             <h5 class="">${relRoom.name}</h5>
-             <p class="card-text"><i class="fas fa-user-friends    "></i> ${relRoom.roomCondition}</p>
-             <p class="card-text">${relRoom.desc}</p>
-             <a href="${relRoom.link}" class="btn btn-primary">Book now from ${relRoom.price}</a>
-           </div>
-         </div>
-           </div>
-         `
-     }).join("")}
     
-    `;
+    
     $('.bestRoomArea .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -78,6 +56,31 @@ $( function(){
           }
       }
   });
+  // Related Rooms
+  document.getElementById('related-area').innerHTML = `
+  ${relatedRooms.map(function related(relRoom){
+      return `
+        <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+         <div class="cardImg">
+           <img src="${relRoom.image}" class="card-img-top" alt="...">
+            <div class="check">
+              <a href="${relRoom.link}"><button>Check Details   <i class="fa fa-chevron-right" aria-hidden="true"></i></button></a>
+            </div>
+         </div>
+         <span>${relRoom.price}/Night</span>
+        <div class="m-4 text-justify">
+          <h5 class="">${relRoom.name}</h5>
+          <p class="card-text"><i class="fas fa-user-friends    "></i> ${relRoom.roomCondition}</p>
+          <p class="card-text">${relRoom.desc}</p>
+          <a href="${relRoom.link}" class="btn btn-primary">Book now from ${relRoom.price}</a>
+        </div>
+      </div>
+        </div>
+      `
+  }).join("")}
+ 
+ `;
   $('.overview .owl-carousel').owlCarousel({
       loop:true,
       margin:10,
@@ -96,6 +99,7 @@ $( function(){
     }
 });
 });
+
 
 // connecter a la zone Room data 
 document.getElementById('bestRooms').innerHTML=`
