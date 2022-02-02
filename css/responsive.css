@@ -116,4 +116,7 @@
     padding: 15px 0 5px ;
     background-color: #fff;
 }
+#related-room .card{
+    width: 100% !important;
+}
 }
