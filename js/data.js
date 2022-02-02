@@ -60,3 +60,31 @@ const clients = [
         comments:"Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit, sed do eiusmod tempor "
     }
 ];
+
+// related Room
+const relatedRooms = [
+  {
+    image:"../images/Rooms/2.jpg",
+    name:"Hot Suit Room",
+    roomCondition:"3adult(s) and 4 child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$150.99",
+    link:"room/Hot-Suit-Room.html"
+  },
+  {
+    image:"../images/Rooms/3.jpg",
+    name:"High Standing Rooms",
+    roomCondition:"1adult(s) and 2 child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$340.78",
+    link:"room/High-Standing-Rooms.html"
+  },
+  {
+    image:"../images/Rooms/4.jpg",
+    name:"Presidential Level Suit",
+    roomCondition:"2adult(s) No child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$300.00",
+    link:"room/Presidential-Level-Suit.html"
+  },
+];
