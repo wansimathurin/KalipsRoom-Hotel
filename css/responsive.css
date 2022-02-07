@@ -89,7 +89,7 @@
     }
     /** footer */
     .Footer{
-        height: 90vh;
+        height: 100%;
         background-color: #222f4c;
         color: #fff;
         display: flex;

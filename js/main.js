@@ -139,4 +139,10 @@ document.getElementById('bestRooms').innerHTML=`
       }).join("")}
         `;
 
-      
+       //  preloader
+    //    window.onload = 
+
+    setTimeout(function(){
+        //hide the preloader
+        document.querySelector(".preloader").style.display = "none";
+    },2000)

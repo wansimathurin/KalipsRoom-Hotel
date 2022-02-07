@@ -377,6 +377,7 @@ video{
     background-color: #222f4c;
     color: #fff;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -414,4 +415,143 @@ video{
 }
 .fa-paper-plane:hover{
     color: #d5a419;
+}
+
+
+/*? Room & suits */
+.background1{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/Rooms/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+#RoomsAndSuit ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none !important;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d5a419;
+    cursor: pointer;
+}
+
+
+#RoomsAndSuit  .card{
+    width: 350px !important;
+    height: 500px !important;
+    box-shadow: 0px 5px 25px #d5a419;
+    position: relative;  
+    margin:10px 10px !important;
+}
+.card span{
+    background-color: #d5a419;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center!important;
+    top: 20px;
+    right: 0px;
+}
+#RoomsAndSuit .card .cardImg{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    
+}
+.check{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none !important;
+    align-items: center !important;
+    justify-content: center!important;
+   
+}
+.check button{
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    overflow: hidden;
+    
+}
+.check button:hover{
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+.fa-chevron-right{
+    transition: 1s ease-in-out;
+    color: #d5a419; 
+    margin-left: 12px;
+}
+.check button:hover .fa-chevron-right{
+     transform: translateX(73px);
+   
+}
+.cardImg:hover .check{
+    display: flex !important;
+}
+/* ?card */
+.card .btn,.btn-primary{
+    background-color: #d5a419;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+
+}
+
+/* ?active btn */
+
+#RoomsAndSuit ul li.active{
+    background-color: #222f4c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 99999;
+	height: 100%;
+}
+#status {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+    background-color: #fff;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	/* margin: -32px 0 0 -32px; */
+	padding: 0;
+}
+#status img{
+    height: auto;
+   width: 600px; 
 }
