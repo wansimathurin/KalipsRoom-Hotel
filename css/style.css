@@ -555,3 +555,104 @@ video{
     height: auto;
    width: 600px; 
 }
+
+/* Room List */
+#RoomList span{
+    background-color: #222f4c;
+    padding: 20px 120px;
+    color: #fff;
+}
+.cat-filters{
+    /* background-color: #222f4c; */
+    display: flex;
+    align-items: left;
+    font-size: 20px;
+    flex-direction: column;
+}
+.gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+}
+.traveller{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+#links-gallery{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#links-gallery li{
+    cursor: pointer;
+}
+.card-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-gallery .col-lg-3{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.card-gallery .col-lg-3:hover{
+    transform: scale(1.1);
+}
+#gallery ul li.active{
+    border-bottom: 2px solid #d5a419;
+    margin-top: 10px;
+}
+/* gallery end */
+
+/* ?New details */
+.New .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 10px; */
+    /* background-color: #222f4c;
+    border: 1px solid red; */
+    margin-bottom: 25px;
+}
+.New .item img{
+    width: 100px !important;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.loop-items{
+    margin-top: 20px;
+}
+
+/* contact area */
+
+.contact-area .form .flex{
+  display: flex !important;
+  width: 102.5% !important;
+}
+.contact-area .form .form-control,.contact-area .btn-color,.contact-area p{
+    margin: 10px;
+    border-radius: 0px !important;
+}
+.map{
+    height: 400px;
+    width: 100%;
+}

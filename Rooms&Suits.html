@@ -253,21 +253,31 @@
             // active class added
             $('.filter-button-group').on( 'click', 'li', function() {
             $(this).toggleClass('active');
-            
+            $(this).addClass('active');
             });
-            
+            function delors(item){
+             item.classList.remove('active');
+            }
+  
        });
           // preloader
           setTimeout(function(){
-              //hide the preloader
-              document.querySelector(".preloader").style.display = "none";
-          },2000);
-        // ?active section code
-       const listItem = document.querySelectorAll('.list');
+              //hide the preloader 
+                document.querySelector(".preloader").style.display = "none";
+            },2000);
+          // ?active section code
+       const listItem = document.querySelectorAll('.list');//assign the list to a variable
        listItem.forEach((item)=>item.addEventListener('click', function activeLink(){
         listItem.forEach((item)=>item.classList.remove('active'));
-         listItem.classList.add('active');
+         item.classList.add('active');
        }));
+      //  first method
+        // window.onload=()=>document.querySelector(".preloader").style.display = "none";
+        // second method
+        // setTimeout(()=>{
+        //   document.querySelector(".preloader").style.display = "none";
+        // },2000);
+        
     </script>
   </body>
 </html>
